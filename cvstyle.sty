@@ -1,0 +1,46 @@
+\ProvidesPackage{cvstyle}
+
+\usepackage[top=1.5cm, bottom=1cm, left=1cm, right=1cm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{array}
+
+\renewcommand*\sfdefault{phv}
+\renewcommand{\familydefault}{\sfdefault}
+
+\setlist[itemize]{itemsep=0.05cm, topsep=0pt}
+
+\pagenumbering{gobble}
+
+\newcommand{\nheader}[1]{%
+  \vspace{.8cm}
+  {\bfseries\large #1}
+}
+
+% [1] start date
+% [2] end date
+% [2] bold text
+% [3] normal text
+% [4] body text
+\newcommand{\nentry}[5]{%
+  \vspace{.8cm}
+  \begin{minipage}[t]{.14\linewidth}
+    \begin{flushright}
+      #1
+      \ifx&#2&%
+      \else
+      ---
+      #2
+      \fi
+    \end{flushright}
+  \end{minipage}%
+  \hspace{.5cm}%
+  \begin{minipage}[t]{.76\linewidth}
+    {\bfseries #3} --- #4
+    
+    \vspace{.2cm}
+    {\small%
+      #5
+    }
+  \end{minipage}
+}

@@ -1,0 +1,194 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{cvstyle}
+
+
+\begin{document}
+
+\noindent\makebox[\linewidth][c]{%
+  \noindent\begin{minipage}{.3\linewidth}
+    \bfseries\Large
+    Victor Rodrigues
+  \end{minipage}%
+  \begin{minipage}{.5\linewidth}
+    \begin{flushright}
+    %Sheffield, UK\\ \vspace{0.2cm}
+    {\ttfamily 07599247587}\\
+    \href{mailto:victorlampreia@gmail.com}{\ttfamily victorlampreia@gmail.com}\\
+    \url{github.com/vlampreia}
+    \end{flushright}
+  \end{minipage}
+}
+
+
+%-------------------------------------------------------------------------------
+\nheader{Education}
+
+\nentry{2013}{2017}
+       {University of Manchester}
+       {B.Sc. Computer Science}
+{%
+  \begin{itemize}
+    \item Achieved {\bfseries First-class honours} in the second year;
+
+    \item Currently exploring automatic birdsong recognition using
+      computer vision and machine-learning techniques.
+
+    \item Achieved a First-class for first year team project, a web application
+      written using {\bfseries PHP} and {\bfseries JavaScript} for creating and
+      sharing music playlists, exploring new methods for music data
+      visualization.
+
+    \item Developed core team-working, management and communication skills
+      through enquiry-based learning. Exposed to diverse technologies.
+
+  \end{itemize}
+}
+
+
+%-------------------------------------------------------------------------------
+\nheader{Experience}
+
+\nentry{Sep 2015}{Aug 2016}
+       {CERN, Switzerland}
+       {Intern Technical Student Software Engineer}
+{%
+  Developed exetensions for the specialised Siemens/ETM {\bfseries WinCC-OA}
+  SCADA software used across CERN's infrastructure, used in applications ranging
+  from electrical networks to cryogenics to magnet protection systems. Software
+  was developed using a proprietary interpreted {\bfseries C}-like language.
+
+  \begin{itemize}
+
+    \item Developed a feature-complete distributed RPC framework for WinCC-OA
+      from the ground-up;
+
+    \item Follows broker-client architecture, allows balancing of multiple
+      concurrently executing worker processes across multiple systems;
+
+    \item Developed underlining ringbuffer broker-client communication system
+      for the framework;
+
+    \item Developed existing use-case for the framework, a WinCC-OA
+      configuration application for SCADA technicians.
+
+  \end{itemize}
+}
+
+\nentry{Jul 2014}{Aug 2015}
+       {RefME, London}
+       {Software Developer}
+{%
+  Developed backend {\bfseries Node.js} modules for a bibliographic referencing
+  application within a strong {\bfseries Agile} and {\bfseries TDD} environment.
+
+  \begin{itemize}
+
+    \item Developed core modules for porting bibliographic data between
+      internal JSON and third-party formats including
+      \emph{BibTeX},
+      \emph{RIS},
+      \emph{EndNote} XML,
+      \emph{Evernote} XML, and
+      \emph{.docx};
+
+    \item Wrote web scrapers for detecting and retrieving bibliographic data
+      from public websites such as
+      \emph{JSTOR},
+      \emph{BBC News},
+      \emph{NCBI}, etc.;
+
+    \item Ported API lookup components from an original Ruby codebase to Node.js
+      modules.
+
+  \end{itemize}
+}
+
+\nentry{Jun 2011}{Aug 2011}
+       {Museu da Lourinh\~a, Portugal}
+       {Intern Database and Systems Administrator}
+{%
+  Assisted in modernization efforts to improve the museum's previously manual
+  record keeping and management procedures, including database design, system
+  administration and network design.
+}
+
+\pagebreak
+%-------------------------------------------------------------------------------
+\nheader{Technical Knowledge and Experience}
+
+In order of proficiency:\\
+
+\begin{tabular}{>{\bfseries}l l}
+  Languages   & NodeJS/Javscript, C, Java, C++, Python, HTML/CSS, ARM ASM\\
+  Databases   & PostgreSQL, MySQL, Neo4j (SPARQL)\\
+  SVC         & Git, SVN\\
+  Tooling     & Vim, GDB, Eclipse\\
+  Platforms   & GNU/Linux, MS Windows, WinCC-OA, OpenBSD\\
+  Methodology & TDD, Agile (Scrum)
+\end{tabular}
+
+%-------------------------------------------------------------------------------
+\nheader{Hackathons}
+
+\nentry{Feb 2015}{}
+       {StacsHack}
+       {University of St. Andrews, Scotland}
+{%
+
+  Developed a computer-vision application which uses machine-learning techniques
+  to recognize and attribute a score to a correct series of physical movements
+  by the player.
+
+}
+
+\nentry{Oct 2014}{}
+       {24 Hour Coding Competition}
+       {HackManchester, Manchester}
+{%
+  Developed a web API in Node.js enabling users to compete and challenge
+  eachother for charity with a set waiger, with a team of four within 24 hours.
+  The API would be integrated into online games through a REST API\@.
+}
+
+\nentry{Oct 2014}{}
+       {PayPal BattleHack}
+       {PayPal, London}
+{%
+  Developed a multi-stage authentication framework in Node.js with a team of
+  four within 24 hours. It would provide an alternative method of authentication
+  by use of trusted QR codes and tokens.
+}
+
+\nentry{Jun 2014}{}
+       {HACKcelerator Programme}
+       {AngelHack, London}
+{%
+  \begin{itemize}
+    \item{\bfseries Winner} for entry into a pre-accelerator
+      programme for startups
+  \end{itemize}
+
+  Developed a multi-user cooperative holiday planning iOS app, with a Node.js
+  backend with a team of four within 24 hours. The app retrieves personal
+  information from Facebook, a set of user constraints for budgeting, and
+  automatically generates an iteniary with suggested hotels based on their
+  proximity to events with potential interest to the user, as well as
+  transportation options.
+}
+
+\nentry{Mar 2014}{}
+       {Greater Manchester Data Synchronization Programme}
+       {OpenData Manchester}
+{%
+  \begin{itemize}
+    \item {\bfseries Winner of four categories}
+  \end{itemize}
+
+  Developed two web applications for graphical data visualization with a team of
+  four within 24 hours, itegrating multiple open datasets and external APIs as
+  part of a pioneering initiative towards free-flowing open-data amongst the
+  the public sector organizations within Greater Manchester.
+}
+
+\end{document}
