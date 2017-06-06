@@ -29,22 +29,22 @@
        {B.Sc. Computer Science}
 {%
   \begin{itemize}
-    \item Achieved {\bfseries First-class honours} in the second year;
+    \item Achieved {\bfseries First-class} in the second year.
 
-    \item Currently exploring automatic birdsong recognition using
-      computer vision and machine-learning techniques.
+    \item Built an automatic birdsong recognition system based on spectrogram
+      image recognition using computer vision techniques and random forests on
+      cross-correlation mapping results using
+      {\bfseries Python}.
+      Achieved an accuracy of 89\% on a limited dataset.
 
     \item Achieved a First-class for first year team project, a web application
-      written using {\bfseries PHP} and {\bfseries JavaScript} for creating and
-      sharing music playlists, exploring new methods for music data
-      visualization.
+      for creating and sharing music playlists -- exploring metadata visualisation.
 
     \item Developed core team-working, management and communication skills
       through enquiry-based learning. Exposed to diverse technologies.
 
   \end{itemize}
 }
-
 
 %-------------------------------------------------------------------------------
 \nheader{Experience}
@@ -53,25 +53,27 @@
        {CERN, Switzerland}
        {Intern Technical Student Software Engineer}
 {%
-  Developed exetensions for the specialised Siemens/ETM {\bfseries WinCC-OA}
-  SCADA software used across CERN's infrastructure, used in applications ranging
-  from electrical networks to cryogenics to magnet protection systems. Software
-  was developed using a proprietary interpreted {\bfseries C}-like language.
+  Supervised self-driven development of modules for the Siemens {\bfseries WinCC-OA}
+  SCADA software which is used across CERN's infrastructure, from
+  electrical networks to cryogenics.
+  Software was written in a proprietary interpreted {\bfseries C}-like language
+  within platform constraints with a {\bfseries TDD} approach.
 
   \begin{itemize}
+    \item Built a feature-complete distributed RPC framework for WinCC-OA
+      from the ground-up.
 
-    \item Developed a feature-complete distributed RPC framework for WinCC-OA
-      from the ground-up;
+    \item Developed a specialised database-oriented communication system based
+      on lock-free ring-buffers as a foundation for the client-broker architecture.
 
-    \item Follows broker-client architecture, allows balancing of multiple
-      concurrently executing worker processes across multiple systems;
+    \item Designed a robust RPC protocol for concurrent multi-system and multi-executor
+      support -- semi-resilient to client and server failure.
 
-    \item Developed underlining ringbuffer broker-client communication system
-      for the framework;
+    \item Developed integrated diagnostic tooling to gain insights into RPC transactions in
+      real-time.
 
-    \item Developed existing use-case for the framework, a WinCC-OA
-      configuration application for SCADA technicians.
-
+    \item Developed a WinCC-OA integrated module for modbus network administration,
+      through direct application of the developed RPC framework.
   \end{itemize}
 }
 
@@ -79,27 +81,26 @@
        {RefME, London}
        {Software Developer}
 {%
-  Developed backend {\bfseries Node.js} modules for a bibliographic referencing
-  application within a strong {\bfseries Agile} and {\bfseries TDD} environment.
+  Developed backend {\bfseries Node.js} modules for a multi-platform
+  bibliographic referencing app within an {\bfseries Agile} and
+  {\bfseries TDD}-focused environment as part of a successful startup.
+
 
   \begin{itemize}
-
-    \item Developed core modules for porting bibliographic data between
-      internal JSON and third-party formats including
+    \item Developed extensible modules for porting bibliographic data between
+      internal JSON and third-party formats such as
       \emph{BibTeX},
       \emph{RIS},
-      \emph{EndNote} XML,
-      \emph{Evernote} XML, and
-      \emph{.docx};
+      \emph{EverNote} XML, and
+      \emph{DOCX}.
 
     \item Wrote web scrapers for detecting and retrieving bibliographic data
       from public websites such as
       \emph{JSTOR},
-      \emph{BBC News},
-      \emph{NCBI}, etc.;
+      \emph{BBC News}, and
+      \emph{NCBI}.
 
-    \item Ported API lookup components from an original Ruby codebase to Node.js
-      modules.
+    \item Ported API lookup modules from {\bfseries Ruby on Rails} to Node.js.
 
   \end{itemize}
 }
@@ -108,28 +109,42 @@
        {Museu da Lourinh\~a, Portugal}
        {Intern Database and Systems Administrator}
 {%
-  Assisted in modernization efforts to improve the museum's previously manual
+  Assisted in modernisation efforts to improve the museum's previously manual
   record keeping and management procedures, including database design, system
   administration and network design.
 }
 
 \pagebreak
 %-------------------------------------------------------------------------------
-\nheader{Technical Knowledge and Experience}
-
-In order of proficiency:\\
+\nheader{Technical Knowledge and Experience}%
+%
+\hfill (in decreasing order of proficiency)\\
+\vspace{0.7cm}
 
 \begin{tabular}{>{\bfseries}l l}
-  Languages   & NodeJS/Javscript, C, Java, C++, Python, HTML/CSS, ARM ASM\\
+  Languages   & NodeJS/Javscript, C, Java, Python, C++, HTML/CSS, ARM ASM\\
   Databases   & PostgreSQL, MySQL, Neo4j (SPARQL)\\
-  SVC         & Git, SVN\\
-  Tooling     & Vim, GDB, Eclipse\\
+  SVC         & Git, SVN, Hg\\
+  Tooling     & GNU, Clang, Vim, \\
   Platforms   & GNU/Linux, MS Windows, WinCC-OA, OpenBSD\\
-  Methodology & TDD, Agile (Scrum)
+  Methodologies  & TDD, Agile (Scrum), Standard Waterfall
 \end{tabular}
 
 %-------------------------------------------------------------------------------
 \nheader{Hackathons}
+
+\nentry{Nov 2016}{}
+        {GreatUniHack}
+        {MLH, Manchester}
+{%
+  \begin{itemize}
+    \item {\bfseries Winner} of first category
+  \end{itemize}
+
+  Developed a convolutional neural network model which generates 2d levels for
+  an open-source Super Mario clone. The model is trained on existing levels by
+  automatic conversion to an ASCII representation.
+}
 
 \nentry{Feb 2015}{}
        {StacsHack}
@@ -137,7 +152,7 @@ In order of proficiency:\\
 {%
 
   Developed a computer-vision application which uses machine-learning techniques
-  to recognize and attribute a score to a correct series of physical movements
+  to recognise and attribute a score to a correct series of physical movements
   by the player.
 
 }
@@ -147,7 +162,7 @@ In order of proficiency:\\
        {HackManchester, Manchester}
 {%
   Developed a web API in Node.js enabling users to compete and challenge
-  eachother for charity with a set waiger, with a team of four within 24 hours.
+  each-other for charity with a set wager, with a team of four within 24 hours.
   The API would be integrated into online games through a REST API\@.
 }
 
@@ -172,23 +187,23 @@ In order of proficiency:\\
   Developed a multi-user cooperative holiday planning iOS app, with a Node.js
   backend with a team of four within 24 hours. The app retrieves personal
   information from Facebook, a set of user constraints for budgeting, and
-  automatically generates an iteniary with suggested hotels based on their
+  automatically generates an itinerary with suggested hotels based on their
   proximity to events with potential interest to the user, as well as
   transportation options.
 }
 
 \nentry{Mar 2014}{}
-       {Greater Manchester Data Synchronization Programme}
+       {Greater Manchester Data Synchronisation Programme}
        {OpenData Manchester}
 {%
   \begin{itemize}
     \item {\bfseries Winner of four categories}
   \end{itemize}
 
-  Developed two web applications for graphical data visualization with a team of
-  four within 24 hours, itegrating multiple open datasets and external APIs as
+  Developed two web applications for graphical data visualisation with a team of
+  four within 24 hours, integrating multiple open datasets and external APIs as
   part of a pioneering initiative towards free-flowing open-data amongst the
-  the public sector organizations within Greater Manchester.
+  the public sector organisations within Greater Manchester.
 }
 
 \end{document}
